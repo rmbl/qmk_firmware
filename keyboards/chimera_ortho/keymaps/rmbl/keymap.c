@@ -22,7 +22,7 @@ enum chimera_ortho_layers
 #define KC_SPFN LT(_NAV, KC_MINS)
 #define KC_SCTL MT(MOD_LCTL, KC_LBRC)
 #define KC_SCTR MT(MOD_LCTL, KC_RBRC)
-#define KC_SPLT MT(MOD_LALT, KC_TILD)
+#define KC_SPLT MT(MOD_LALT, KC_GRV)
 #define KC_SPRT MT(MOD_RALT, KC_BSLS)
 #define KC_GBRC MT(MOD_LGUI, KC_EQL)
 #define KC_MESC LT(_MACROS, KC_ESC)
@@ -87,7 +87,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          , F6 , F7 , F8 , F9 ,F10 ,    ,          ,GRV ,SCLN,MINS,LBRC,RBRC,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                         PIPE,    ,                    ,
+                         PIPE,DEL ,                    ,
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
