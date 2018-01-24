@@ -19,12 +19,12 @@ enum chimera_ortho_layers
 
 #define KC_NMPD MO(_NUMPAD)
 #define KC_SYMB MO(_SYMBOLS)
-#define KC_SPFN LT(_NAV, KC_MINS)
+#define KC_SPFN LT(_NAV, KC_GRV)
 #define KC_SCTL MT(MOD_LCTL, KC_LBRC)
 #define KC_SCTR MT(MOD_LCTL, KC_RBRC)
-#define KC_SPLT MT(MOD_LALT, KC_GRV)
-#define KC_SPRT MT(MOD_RALT, KC_BSLS)
-#define KC_GBRC MT(MOD_LGUI, KC_EQL)
+#define KC_SPLT MT(MOD_LALT, KC_MINS)
+#define KC_SPRT MT(MOD_RALT, KC_EQL)
+#define KC_GBRC MT(MOD_LGUI, KC_BSLS)
 #define KC_MESC LT(_MACROS, KC_ESC)
 #define KC_INCL M(0)
 #define KC_PULL M(1)
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
      LSPO, Z  , X  , C  , V  , B  ,SPFN,      GBRC, N  , M  ,COMM,DOT ,SLSH,RSPC,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                         NMPD,BSPC,                SPC ,SYMB
+                         NMPD, SPC,                BSPC,SYMB
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,          ,    , 1  , 2  , 3  ,SLSH,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,    ,                     , 0
+                             ,    ,                DEL , 0
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
@@ -99,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,    ,          ,    ,PGUP,PGDN,    ,    ,    ,
   //|----+----+----+----+----+----+----|     |----+----+----+----+----+----+----|
-                             ,DEL ,                    ,
+                             ,DEL ,                DEL ,
   // \------------------+----+----+---/       \---+----+----+-------------------/
   ),
 
